@@ -162,6 +162,7 @@ header{
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 .hero-text-box{
     position: absolute;
@@ -304,4 +305,100 @@ header{
     margin-bottom: 5px;
 }
 
+/*-----------------------------*/
+/*     testimonials section    */                           
+/*-----------------------------*/
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
+blockquote{
+    padding: 2%;
+    font-style: italic;
+    line-height: 165%;
+    position: relative;
+    margin-top: 40px;
+}
+blockquote:before{
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    
+}
+blockquote:after{
+    content: "\201D";
+    font-size: 500%;
+    display: block;
+    position: absolute;
+    bottom: 45px;
+    left:20px;
+    margin-left: 170px;
+}
+cite{
+    font-size: 90%;
+    margin-top: 50px;
+    display: block;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*-----------------------------*/
+/*      Sign Up section        */                           
+/*-----------------------------*/
+
+.section-plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #bdbdbd;
+}
+.plan-box div:last-child{
+    text-align: center;
+    border-bottom: 1px solid transparent;
+}
+.plan-box div:first-child{
+    background-color: #d7d7d7;
+}
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 200;
+    color: #1abc9c;
+}
+
+.plan-price span{
+    font-size: 50%;
+    font-weight: 300;
+}
+
+.plan-price-meal{
+    font-size: 80%;
+}
+
+.plan-box ul{
+    list-style: none;
+}
+
+.plan-box ul li{
+    padding: 5px 0;
+}
 
