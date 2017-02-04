@@ -82,11 +82,36 @@ h3{
     line-height: 145%;
 }
 /*------- ICONS ------------*/
-.box i{
+.icon-big{
     font-size: 350%;
     color: #1abc9c;
     display: block;
     margin-bottom:10px ;
+    
+}
+.icon-small{
+    font-size:125%;
+    color:#1abc9c;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    margin-right: 5px;
+}
+
+/*------- LINKS -------------*/
+
+.twitter-link:link,
+.twitter-link:visited {
+    color: #1abc9c;
+    text-decoration: none;
+    border-bottom: 1px solid  #1abc9c;
+    transition: border-bottom 0.2s,color 0.2s;
+}
+
+.twitter-link:hover,
+.twitter-link:active{
+    color: #555;
+    border-bottom: 1px solid  transparent;
 }
 
 /*------- BUTTONS ----------*/
@@ -265,3 +290,18 @@ header{
     width: auto;
     margin-right: 10px;
 }
+
+/*-----------------------------*/
+/*        cities section       */                           
+/*-----------------------------*/
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.city-feature{
+    margin-bottom: 5px;
+}
+
+
