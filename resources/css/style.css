@@ -117,7 +117,8 @@ h3{
 /*------- BUTTONS ----------*/
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     padding: 10px 30px;
     font-weight: 500;
@@ -126,7 +127,9 @@ h3{
     transition: background-color 0.2s,border 0.2s,color 0.2s;
 }
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]
+{
     background-color: #1abc9c;
     border: 1px solid #1abc9c; 
     color:#fff;
@@ -139,11 +142,15 @@ h3{
 }
 
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
     background-color: #169e83;
 }
 .btn-full:hover,
-.btn-full:active{
+.btn-full:active,
+input[type=submit]{
     border: 1px solid #169e83; 
 }
 
@@ -365,18 +372,22 @@ cite img{
     border-radius: 10px;
     width: 90%;
     margin-left: 5%;
+    box-shadow: 0 2px 2px;
 }
 
 .plan-box div{
     padding: 15px;
     border-bottom: 1px solid #bdbdbd;
+    
 }
 .plan-box div:last-child{
     text-align: center;
     border-bottom: 1px solid transparent;
 }
 .plan-box div:first-child{
-    background-color: #d7d7d7;
+    background-color: #fafafa;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 .plan-price{
     font-size: 300%;
@@ -402,3 +413,45 @@ cite img{
     padding: 5px 0;
 }
 
+/*-----------------------------*/
+/*      Contact section        */                           
+/*-----------------------------*/
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.2s;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+select:focus{
+    outline: none;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+select:hover{
+  border-color: #1abc9c;
+}
+
+input[type=checkbox]{
+    margin:10px 5px 10px 0;
+}
+
+textarea:hover{
+    border-color: #1abc9c;
+}
